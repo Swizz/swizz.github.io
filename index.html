@@ -1,78 +1,13 @@
 ---
-title: prototype
 layout: default
 ---
-<section id="picture" class="show-for-small-only">
-    <img src="http://placehold.it/600x800/007dbb/FFFFFF/&text=Profile" /> 
-</section>
 
-<section id="identity" class="panel radius row">
-    <div class="column large-9">
-        <h1>Quentin Gerodel</h1>
-        <h5 class="subheader">quentin.gerodel@daeli.org<h5>
-        <h5 class="subheader">06.46.50.00.00</h5>
-    </div>
-    <div class="column large-3 show-for-medium-up">
-        <img src="http://placehold.it/600x800/007dbb/FFFFFF/&text=Profile" /> 
-    </div>
-</section>
+{% include sections/identity.html %}
 
-<section id="career" class="panel radius row">
-    <h4 class="subheader">Developper Full-Stack</h4>
-</section>
+{% include sections/career.html %}
 
-<section id="scolarity" class="panel radius row">
-    <dl class="accordion" data-accordion>
-        <dd class="accordion-navigation">
-            <a href="#school1">BTS SIO</a>
-            <div id="school1" class="content">
-                HUM..
-            </div>
-        </dd>
-        <dd class="accordion-navigation">
-            <a href="#school2">Bac Pro SEN</a>
-            <div id="school2" class="content">
-                HUM..
-            </div>
-        </dd>
-    </dl>
-</section>
+{% include sections/scolarity.html %}
 
-<section id="experience" class="panel radius row">
-    <dl class="accordion" data-accordion>
-        <dd class="accordion-navigation">
-            <a href="#company1">Yupeek</a>
-            <div id="company1" class="content">
-                HUM..
-            </div>
-        </dd>
-        <dd class="accordion-navigation">
-            <a href="#company2">DAELI</a>
-            <div id="company2" class="content">
-                HUM..
-            </div>
-        </dd>
-        <dd class="accordion-navigation">
-            <a href="#company3">FindSpire</a>
-            <div id="company3" class="content">
-                HUM..
-            </div>
-        </dd>
+{% include sections/experience.html %}
 
-    </dl>
-</section>
-
-<section id="skills" class="panel radius row">
-    <div class="colum large-3 tags">
-        <ul>
-            <li class="tag2">POO</li>
-            <li class="tag3">Python<li>
-            <li class="tag1">C#<li>
-            <li class="tag4">Linux</li>
-            <li class="tag2">Django<li>
-            <li class="tag5">JavaScript</li>
-            <li class="tag3">REST</li>
-            <li class="tag2">Jekyll<li>
-        </ul>
-    </div>
-</section>
+{% include sections/skills.html %}
