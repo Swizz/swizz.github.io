@@ -1,16 +1,24 @@
+{% assign scolarity = site.data.scolarity %}
+
 <section id="scolarity" class="panel radius row">
     <dl class="accordion" data-accordion>
+        
+    {% for school in scolarity %}
         <dd class="accordion-navigation">
-            <a href="#school1">BTS SIO</a>
-            <div id="school1" class="content">
-                HUM..
+            <a href="#school-{{ school.slug }}" class="clearfix">
+                <span class="left">
+                    {{ school.diploma }} {{ school.name }}
+                </span>
+                <span class="right">
+                    {{ school.school }} 
+                    <span class="label">{{ school.city }}</span>
+                </span>
+            </a>
+            <div id="school-{{ school.slug }}" class="content">
+                {{ school.description }}
             </div>
         </dd>
-        <dd class="accordion-navigation">
-            <a href="#school2">Bac Pro SEN</a>
-            <div id="school2" class="content">
-                HUM..
-            </div>
-        </dd>
+    {% endfor %}
+
     </dl>
 </section>

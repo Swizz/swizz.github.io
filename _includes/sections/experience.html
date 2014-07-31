@@ -1,23 +1,25 @@
+{% assign experience = site.data.experience %}
+
 <section id="experience" class="panel radius row">
     <dl class="accordion" data-accordion>
+    
+    {% for company in experience %}
         <dd class="accordion-navigation">
-            <a href="#company1">Yupeek</a>
-            <div id="company1" class="content">
-                HUM..
+            <a href="#company-{{ company.slug }}" class="clearfix">
+                <span class="left">
+                    {{ company.contract }} {{ company.job }}
+                </span>
+                <span class="right">
+                    {{ company.company }} 
+                    <span class="label">{{ company.city }}</span>
+                </span>
+            </a>
+            <div id="company-{{ company.slug }}" class="content">
+                {{ company.description }}
             </div>
         </dd>
-        <dd class="accordion-navigation">
-            <a href="#company2">DAELI</a>
-            <div id="company2" class="content">
-                HUM..
-            </div>
-        </dd>
-        <dd class="accordion-navigation">
-            <a href="#company3">FindSpire</a>
-            <div id="company3" class="content">
-                HUM..
-            </div>
-        </dd>
+    {% endfor %}
+
 
     </dl>
 </section>

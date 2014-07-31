@@ -1,0 +1,20 @@
+- slug: freelance-yupeek
+  contract: Freelance
+  job: Developper Full-Stack
+  company: Yupeek
+  city: Nancy
+  description: Noop
+
+- slug: stage-daeli
+  contract: Stage
+  job: Gestionnaire de projet & Developper Back-end
+  company: DAELI
+  city: Nancy
+  description: Noop
+
+- slug: freelance-stage-findspire
+  contract: Stage puis Freelance
+  job: Developper Full-Stack
+  company: Findspire
+  city: Nancy
+  description: Noop

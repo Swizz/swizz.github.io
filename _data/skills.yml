@@ -1,0 +1,26 @@
+- name: POO
+  rank: 2
+
+- name: Python
+  rank: 3
+
+- name: C#
+  rank: 1
+
+- name: Linux
+  rank: 4
+
+- name: Django
+  rank: 2
+
+- name: Javascript
+  rank: 5
+
+- name: REST
+  rank: 3
+
+- name: Jekyll
+  rank: 2
+
+- name: Erlang
+  rank: 1

@@ -1,0 +1,13 @@
+- slug: bts-sio
+  diploma: BTS
+  name: Service Informatique aux Organisations
+  school: Lycee Frederique Chopin
+  city: Nancy
+  description: Noop
+
+- slug: bacpro-sen
+  diploma: Bac Pro
+  name: Systemes Electroniques et Numeriques
+  school: Lycee Professionel Pierre de Coubertin
+  city: Nancy
+  description: Noop

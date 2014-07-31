@@ -1,14 +1,13 @@
+{% assign skills = site.data.skills %}
+
 <section id="skills" class="panel radius row">
     <div class="colum large-3 tags">
         <ul>
-            <li class="tag2">POO</li>
-            <li class="tag3">Python<li>
-            <li class="tag1">C#<li>
-            <li class="tag4">Linux</li>
-            <li class="tag2">Django<li>
-            <li class="tag5">JavaScript</li>
-            <li class="tag3">REST</li>
-            <li class="tag2">Jekyll<li>
+            
+        {% for skill in skills %}
+            <li class="tag{{ skill.rank }}">{{ skill.name }}</li>
+        {% endfor %}
+
         </ul>
     </div>
 </section>
