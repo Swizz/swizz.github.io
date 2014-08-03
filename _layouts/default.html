@@ -3,16 +3,19 @@
     {% include head.html %}
 
     <body>
-    <div data-alert="" class="alert-box alert radius">
+    <div data-alert="" style="margin-bottom:0px;" class="alert-box alert radius show-for-small">
         This website is a prototype alpha version, none of data presented can be be considered true.
     </div>
-
+    <div data-alert="" class="alert-box alert radius hide-for-small">
+        This website is a prototype alpha version, none of data presented can be be considered true.
+    </div>
+    
     {{ content }}
 
     <div data-alert="" style="margin-bottom:0px;" class="alert-box alert radius">
         This website is a prototype alpha version, none of data presented can be be considered true.
     </div>
-
+    
     {% include scripts.html %}
     </body>
 </html>
