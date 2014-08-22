@@ -6,22 +6,29 @@
     {% for school in scolarity %}
         <dd class="accordion-navigation">
             <a href="#school-{{ school.slug }}" class="row">
-                <div class="column large-6 medium-6"> 
-                    {{ school.diploma }} {{ school.name }}
+                <div class="show-for-medium-up show-for-landscape">
+                    <div class="column large-6 medium-6 small-6"> 
+                        {{ school.diploma }} {{ school.name }}
+                    </div>
+                    <div class="column large-6 medium-6 small-6 text-right">
+                        {{ school.school }} 
+                        <span class="label">{{ school.city }}</span>
+                    </div>
                 </div>
-                <div class="column large-6 medium-6">
-                    <span class="text-right show-for-medium-up">
+                <div class="show-for-small-only show-for-portrait">
+                    <div class="column large-6 medium-6"> 
+                        {{ school.diploma }} {{ school.name }}
+                    </div> 
+                    <div class="column large-6 medium-6 text-left subheader">
                         {{ school.school }} 
                         <span class="label">{{ school.city }}</span>
-                    </span>
-                    <span class="text-left subheader show-for-small-only">
-                        {{ school.school }} 
-                        <span class="label">{{ school.city }}</span>
-                    </span>
+                    </div>
                 </div>
             </a>
             <div id="school-{{ school.slug }}" class="row content">
-                {{ school.description }}
+                <div class="column">
+                    {{ school.description }}
+                </div>
             </div>
         </dd>
     {% endfor %}
