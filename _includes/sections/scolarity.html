@@ -5,16 +5,22 @@
         
     {% for school in scolarity %}
         <dd class="accordion-navigation">
-            <a href="#school-{{ school.slug }}" class="clearfix">
-                <span class="left">
+            <a href="#school-{{ school.slug }}" class="row">
+                <div class="column large-6 medium-6"> 
                     {{ school.diploma }} {{ school.name }}
-                </span>
-                <span class="right">
-                    {{ school.school }} 
-                    <span class="label">{{ school.city }}</span>
-                </span>
+                </div>
+                <div class="column large-6 medium-6">
+                    <span class="text-right show-for-medium-up">
+                        {{ school.school }} 
+                        <span class="label">{{ school.city }}</span>
+                    </span>
+                    <span class="text-left subheader show-for-small-only">
+                        {{ school.school }} 
+                        <span class="label">{{ school.city }}</span>
+                    </span>
+                </div>
             </a>
-            <div id="school-{{ school.slug }}" class="content">
+            <div id="school-{{ school.slug }}" class="row content">
                 {{ school.description }}
             </div>
         </dd>
