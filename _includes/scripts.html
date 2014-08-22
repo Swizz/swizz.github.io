@@ -1,17 +1,13 @@
-<!--Libs-->
+
 <script src="js/jquery.min.js"></script>
-<script src="js/modernizr.min.js"></script>
+<script src="js/foundation.min.js"></script>
 <script src="js/skrollr.min.js"></script>
 <script>
-    // Libs loaders
-    skrollr.init({
-	});
-</script>
-
-
-<!--Foundation-->
-<script src="js/foundation.min.js"></script>
-<script>
-    // Foundation loader
     $(document).foundation();
+    
+    skrollr.init({
+		smoothScrolling: false,
+		mobileDeceleration: 0.004
+	});
+
 </script>
