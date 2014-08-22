@@ -6,7 +6,7 @@
     {% for school in scolarity %}
         <dd class="accordion-navigation">
             <a href="#school-{{ school.slug }}" class="row">
-                <div class="show-for-medium-up show-for-landscape">
+                <div class="show-for-landscape">
                     <div class="column large-6 medium-6 small-6"> 
                         {{ school.diploma }} {{ school.name }}
                     </div>
@@ -15,11 +15,15 @@
                         <span class="label">{{ school.city }}</span>
                     </div>
                 </div>
-                <div class="show-for-small-only show-for-portrait">
+                <div class="show-for-portrait">
                     <div class="column large-6 medium-6"> 
                         {{ school.diploma }} {{ school.name }}
-                    </div> 
-                    <div class="column large-6 medium-6 text-left subheader">
+                    </div>
+                    <div class="column large-6 medium-6 text-right show-for-medium-up">
+                        {{ school.school }} 
+                        <span class="label">{{ school.city }}</span>
+                    </div>
+                    <div class="column large-6 medium-6 text-left subheader show-for-small-only">
                         {{ school.school }} 
                         <span class="label">{{ school.city }}</span>
                     </div>
