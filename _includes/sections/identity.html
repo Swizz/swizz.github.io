@@ -1,6 +1,6 @@
 {% assign profile = site.data.profile %}
 
-<section id="picture" class="show-for-small-only show-for-portrait">
+<section id="picture" class="show-for-small-only show-for-portrait hidden-for-medium-up">
     <img src="{{ profile.picture }}" /> 
 </section>
 
@@ -10,7 +10,7 @@
         <h5 class="subheader">{{ profile.email }}<h5>
         <h5 class="subheader">{{ profile.tel }}</h5>
     </div>
-    <div class="column large-3 medium-3 small-3 show-for-medium-up show-for-landscape">
+    <div class="column large-3 medium-3 small-3 show-for-medium-up">
         <img src="{{ profile.picture }}" /> 
     </div>
 </section>
