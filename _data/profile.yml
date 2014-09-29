@@ -1,6 +1,17 @@
-name: Quentin Swizz
+name: Quentin GERODEL
+
+#Fix desc size
+description: "Autodidacte en informatique depuis l'âge de mes quatorze ans, je suis depuis toujours passionné de nouvelles technologies.
+Titulaire d'un diplôme d'électronicien, je me suis ensuite concentré sur le développement.
+J'ai la chance de pouvoir être actuellement en première année en apprentissage au sein de l'Ecole d'Ingénieur du Numérique : Telecom Nancy.
+Participant à de nombreux projets seul ou en groupe, je me définis comme étant partisan du Libre."
+max: 155
 
 picture: /img/profile_pic.jpg
 
-email: swizz@daeli.org
-tel: 06.46.50.00.00
+email: quentin.gerodel@telecomnancy.eu
+email-slug: quentin[dot]gerodel[at]telecomnancy[dot]eu
+
+github: Swizz540
+
+twitter: Swizz540

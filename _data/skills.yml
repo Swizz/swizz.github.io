@@ -4,7 +4,7 @@
 - name: Python
   rank: 3
 
-- name: C#
+- name: C++
   rank: 1
 
 - name: Linux
@@ -23,4 +23,31 @@
   rank: 2
 
 - name: Erlang
+  rank: 1
+
+- name: HTML
+  rank: 4
+
+- name: CSS
+  rank: 4
+
+- name: SQL
+  rank: 2
+
+- name: AngularJS
+  rank: 3
+
+- name: Laravel
+  rank: 1
+
+- name: C#
+  rank: 1
+
+- name: PHP
+  rank: 3
+
+- name: GIT
+  rank: 5
+
+- name: Prolog
   rank: 1

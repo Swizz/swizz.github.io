@@ -1,16 +1,42 @@
 {% assign profile = site.data.profile %}
 
-<section id="picture" class="show-for-small-only show-for-portrait hidden-for-medium-up">
-    <img style="width: 100%" src="{{ profile.picture }}" /> 
+<section id="picture" class="show-for-small-only show-for-portrait hidden-for-medium-up" style="margin-bottom: -20px;">
+    <img style="width: 100%" src="{{ profile.picture }}" />
 </section>
 
-<section id="identity" class="panel radius row">
-    <div class="column large-9 medium-9 small-9">
+<section id="identity" class="panel radius row" style="margin-top: 20px;">
+    <div class="column large-9 medium-9">
         <h1>{{ profile.name }}</h1>
-        <h5 class="subheader">{{ profile.email }}<h5>
-        <h5 class="subheader">{{ profile.tel }}</h5>
+        {% if profile.email %}
+        <h5 class="subheader">
+            <i class="fi-mail"></i>
+            <a href="mailto:{{ profile.email }}">{{ profile.email-slug }}</a>
+        </h5>
+        {% endif %}
+        {% if profile.tel %}
+        <h5 class="subheader">
+            <i class="fi-telephone"></i> {{ profile.tel }}
+        </h5>
+        {% endif %}
+        {% if profile.location %}
+        <h5 class="subheader">
+            <i class="fi-marker"></i> {{ profile.location }}
+        </h5>
+        {% endif %}
+        {% if profile.github %}
+        <h5 class="subheader">
+            <i class="fi-social-github"></i>
+            <a href="https://github.com/{{ profile.github }}">{{ profile.github }}</a>
+        </h5>
+        {% endif %}
+        {% if profile.twitter %}
+        <h5 class="subheader">
+            <i class="fi-social-twitter"></i>
+            <a href="https://twitter.com/{{ profile.twitter }}">{{ profile.twitter }}</a>
+        </h5>
+        {% endif %}
     </div>
     <div class="column large-3 medium-3 small-3 show-for-medium-up">
-        <img src="{{ profile.picture }}" /> 
+        <img src="{{ profile.picture }}" />
     </div>
 </section>

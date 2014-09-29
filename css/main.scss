@@ -6,6 +6,40 @@
 html, body, .off-canvas-wrap, .inner-wrap  {
     height: 100%;
 }
+body {
+    section a {
+        color: #de2d0f;
+    }
+    footer a {
+        color: white;
+    }
+}
 div.subheader {
     margin: 0px;
+}
+
+.accordion-navigation blockquote {
+    margin-bottom: 0px;
+}
+
+.subheader {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#languages .progress .meter {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+
+    &.hide {
+        display: none;
+    }
+}
+
+#others i {
+    margin-right: 15px;
 }
