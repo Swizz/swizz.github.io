@@ -1,7 +1,7 @@
 {% assign profile = site.data.profile %}
 
 <section id="picture" class="show-for-small-only show-for-portrait hidden-for-medium-up" style="margin-bottom: -20px;">
-    <img style="width: 100%" src="{{ profile.picture }}" />
+    <img style="width: 100%" src="{{ profile.picture | prepend: site.domain }}" />
 </section>
 
 <section id="identity" class="panel radius row" style="margin-top: 20px;">
@@ -37,6 +37,6 @@
         {% endif %}
     </div>
     <div class="column large-3 medium-3 small-3 show-for-medium-up">
-        <img src="{{ profile.picture }}" />
+        <img src="{{ profile.picture | prepend: site.domain }}" />
     </div>
 </section>

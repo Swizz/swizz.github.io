@@ -2,6 +2,7 @@
 title: "Quentin GERODEL"
 author: "Quentin GERODEL"
 baseurl: ""
+domain: "http://swizz540.github.io"
 
 # Build settings
 markdown: kramdown

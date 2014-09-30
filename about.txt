@@ -1,7 +1,7 @@
  Ce site est hébergé grâce au service GithubPages.
  Il est propulsé par un serveur Jekyll.
 
- Les librairies frontend utilisées sont :
+ Les librairies front-end utilisées sont :
  - Foundation et Foundation-icons par Zurb
  - Modernizr par Faruk Ates
  - jQuery par John Resig
