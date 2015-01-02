@@ -1,8 +1,8 @@
 - name: Culture Japonaise
-  ico:  mountains
+  icon:  send
 
 - name: Jeux de société - Jeux de stratégie - Jeux de rôles
-  ico: die-three
+  icon: puzzle-piece
 
 - name: Tir à  l'arc
-  ico:  target
+  icon:  bullseye

@@ -29,6 +29,12 @@ div.subheader {
     text-overflow: ellipsis;
 }
 
+
+#identity h5 {
+    display: inline;
+}
+
+
 #languages .progress .meter {
     text-align: center;
     color: white;
@@ -40,6 +46,10 @@ div.subheader {
     }
 }
 
-#others i {
-    margin-right: 15px;
+#others i, #identity i {
+    margin-right: 3px;
+}
+
+.list-fa {
+    list-style: none;
 }

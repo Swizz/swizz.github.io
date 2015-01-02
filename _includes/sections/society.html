@@ -1,0 +1,43 @@
+{% assign societies = site.data.society %}
+
+<section id="society" class="panel radius row">
+    <dl class="accordion" data-accordion>
+
+    {% for society in societies %}
+        <dd class="accordion-navigation">
+            <a href="#society-{{ society.slug }}" class="row">
+                <div class="show-for-landscape">
+                    <div class="column large-6 medium-6 small-6">
+                        {{ society.role }}
+                    </div>
+                    <div class="column large-6 medium-6 small-6 text-right">
+                        {{ society.society }}
+                        <span class="label alert">{{ society.city }}</span>
+                    </div>
+                </div>
+                <div class="show-for-portrait">
+                    <div class="column large-6 medium-6">
+                        {{ society.role }}
+                    </div>
+                    <div class="column large-6 medium-6 text-right show-for-medium-up">
+                        {{ society.society }}
+                        <span class="label alert">{{ society.city }}</span>
+                    </div>
+                    <div class="column large-6 medium-6 text-left subheader show-for-small-only">
+                        {{ society.society }}
+                        <span class="label alert">{{ society.city }}</span>
+                    </div>
+                </div>
+            </a>
+            <div id="society-{{ society.slug }}" class="row content">
+                <blockquote>
+                    {{ society.description }}
+                    <cite>{{ society.debut }} - {{ society.fin }}</cite>
+                </blockquote>
+            </div>
+        </dd>
+    {% endfor %}
+
+
+    </dl>
+</section>

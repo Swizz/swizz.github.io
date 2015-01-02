@@ -1,11 +1,11 @@
 {% assign others = site.data.others %}
 
 <section id="others" class="panel radius row">
-    <ul class="side-nav">
+    <ul class="list-fa">
 
     {% for other in others %}
         <li>
-            <i class="fi-{{ other.ico }}"></i> {{ other.name }}
+            <i class="fa fa-{{ other.icon }}"></i> {{ other.name }}
         </li>
     {% endfor %}
 

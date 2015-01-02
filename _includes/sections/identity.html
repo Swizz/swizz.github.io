@@ -7,34 +7,44 @@
 <section id="identity" class="panel radius row" style="margin-top: 20px;">
     <div class="column large-9 medium-9">
         <h1>{{ profile.name }}</h1>
-        {% if profile.email %}
-        <h5 class="subheader">
-            <i class="fi-mail"></i>
-            <a href="mailto:{{ profile.email }}">{{ profile.email-slug }}</a>
-        </h5>
-        {% endif %}
-        {% if profile.tel %}
-        <h5 class="subheader">
-            <i class="fi-telephone"></i> {{ profile.tel }}
-        </h5>
-        {% endif %}
-        {% if profile.location %}
-        <h5 class="subheader">
-            <i class="fi-marker"></i> {{ profile.location }}
-        </h5>
-        {% endif %}
-        {% if profile.github %}
-        <h5 class="subheader">
-            <i class="fi-social-github"></i>
-            <a href="https://github.com/{{ profile.github }}">{{ profile.github }}</a>
-        </h5>
-        {% endif %}
-        {% if profile.twitter %}
-        <h5 class="subheader">
-            <i class="fi-social-twitter"></i>
-            <a href="https://twitter.com/{{ profile.twitter }}">{{ profile.twitter }}</a>
-        </h5>
-        {% endif %}
+
+        <ul class="list-fa">
+            <li><i class="fa fa-map-marker fa-fw"></i>
+                <h5 class="subheader">
+                {{ profile.location }}
+            </h5></li>
+            <li><i class="fa fa-gift fa-fw"></i>
+                <h5 class="subheader">
+                {{ profile.birthday }}
+            </h5></li>
+
+            <li><br/></li>
+
+            {% if profile.email %}
+            <li><i class="fa fa-envelope"></i>
+                <h5 class="subheader">
+                <a href="mailto:{{ profile.email }}">{{ profile.email-slug }}</a>
+            </h5></li>
+            {% endif %}
+            {% if profile.tel %}
+            <li><i class="fa fa-phone"></i>
+                <h5 class="subheader">
+                {{ profile.tel }}
+            </h5></li>
+            {% endif %}
+            {% if profile.github %}
+            <li><i class="fa fa-github-alt"></i>
+                <h5 class="subheader">
+                <a href="https://github.com/{{ profile.github }}">{{ profile.github }}</a>
+            </h5></li>
+            {% endif %}
+            {% if profile.twitter %}
+            <li><i class="fa fa-twitter"></i>
+                <h5 class="subheader">
+                <a href="https://twitter.com/{{ profile.twitter }}">{{ profile.twitter }}</a>
+            </h5></li>
+            {% endif %}
+        </ul>
     </div>
     <div class="column large-3 medium-3 small-3 show-for-medium-up">
         <img src="{{ profile.picture | prepend: site.domain }}" />
