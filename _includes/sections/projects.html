@@ -1,0 +1,16 @@
+{% assign projects = site.data.projects %}
+
+<section id="identity" class="panel radius row">
+
+  {% for project in projects %}
+  <div class="column large-6 medium-4">
+    <ul class="pricing-table">
+      <li class="price"><i class="mega-octicon octicon-{{ project.type }}"></i> {{ project.name }}</li>
+      <li class="bullet-item">{{ project.desc }}</li>
+      <li class="description">{{ project.keywords }}</li>
+      <li class="cta-button"><a class="button alert" href="{{ project.repo | prepend: "http://github.com/" }}">Voir sur GitHub</a></li>
+    </ul>
+  </div>
+  {% endfor %}
+
+</section>

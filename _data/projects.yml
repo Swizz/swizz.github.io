@@ -1,0 +1,23 @@
+- name: Django-MultihostSettings
+  type: repo
+  desc: Paramétrage conditionnel au domaine pour Django
+  repo: Swizz540/PlugAndCode
+  keywords: Python, Django, Pip, Pypi
+
+- name: PlugAndCode
+  type: repo
+  desc: Environnement de développement PHP prêt à l'emploi
+  repo: Swizz540/PlugAndCode
+  keywords: PHP, SQL, Composer, SASS, Twig
+
+- name: Haml.js
+  type: git-pull-request
+  desc: Compilateur HAML coté client
+  repo: tj/haml.js
+  keywords: HAML, Javascript, compiler
+
+- name: Express-Routes
+  type: git-pull-request
+  desc: Boite à outils pour le routage avec Express
+  repo: tj/haml.js
+  keywords: Javascript, Node, Express, Npm
